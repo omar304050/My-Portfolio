@@ -64,11 +64,13 @@ const Work = ({ isDarkMode }) => {
                   </p>
                 </div>
                 <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 ">
-                  <Image
-                    alt="send image"
-                    src={assets.send_icon}
-                    className="w-5"
-                  />
+                  <a href={projects.link} target="blank">
+                    <Image
+                      alt="send image"
+                      src={assets.send_icon}
+                      className="w-5"
+                    />
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -83,7 +85,7 @@ const Work = ({ isDarkMode }) => {
         className="w-max flex items-center justify-center gap-2
       text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-dartHover"
       >
-        show more{" "}
+        show more
         <Image
           src={
             isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold

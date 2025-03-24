@@ -5,6 +5,7 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
+import tailwind from "./tailwind.png";
 import visual from "./visual.png";
 import html from "./html.png";
 import css from "./css.png";
@@ -44,6 +45,7 @@ export const assets = {
   edu_icon_dark,
   project_icon,
   project_icon_dark,
+  tailwind,
   visual,
   html,
   css,
@@ -74,28 +76,33 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "E-commerce App",
+    description: "Fresh Cart",
+    bgImage: "/eco.png",
+    link:"https://e-commerce-app-delta-coral.vercel.app"
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Devfolio Website",
+    description: "html and css template",
+    bgImage: "/devl.png",
+    link:"https://omar304050.github.io/Bootstrap-responsive-web-site/#"
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Angora",
+    description: "Full Responsive Website",
+    bgImage: "/Angora.png",
+    link:"https://omar304050.github.io/full-responsive-website-using-bootstrap-framwork/"
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Weather App",
+    description: "Weather App Using html , css and Js",
+    bgImage: "/wehther.png",
+    link:"https://omar304050.github.io/Weather-App/"
   },
 ];
 
@@ -107,21 +114,21 @@ export const serviceData = [
     link: "",
   },
   {
-    icon: assets.mobile_icon,
+    icon: assets.tailwind,
     title: "Tailwind framework",
     description:
-      "ailwind CSS is a utility-first CSS framework that allows developers to style applications directly in the HTML or JSX without writing custom CSS.",
+      "Tailwind CSS is a utility-first CSS framework that allows developers to style applications directly in the HTML or JSX without writing custom CSS.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
+    icon:assets.js,
     title: "java Script",
     description:
       "JavaScript is a versatile programming language used mainly for web development. It enables dynamic interactions, manipulates the DOM, handles events, and works with APIs.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
+    icon: assets.React,
     title: "React.Js",
     description:
       "React.js is a JavaScript library for building interactive and reusable user interfaces. It follows a component-based architecture and uses a virtual DOM to optimize performance.",
@@ -135,6 +142,7 @@ export const infoList = [
     iconDark: assets.code_icon_dark,
     title: "Languages",
     description: "HTML, CSS, JavaScript React Js, Next Js",
+    
   },
   {
     icon: assets.edu_icon,
@@ -157,3 +165,4 @@ export const toolsData = [
   assets.js,
   assets.React,
 ];
+

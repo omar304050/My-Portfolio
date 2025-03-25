@@ -44,8 +44,10 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 dark:text-black"
       >
+        
         {workData.map((projects, index) => {
           return (
+            <a href={projects.link} target="blank">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
@@ -64,16 +66,15 @@ const Work = ({ isDarkMode }) => {
                   </p>
                 </div>
                 <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 ">
-                  <a href={projects.link} target="blank">
                     <Image
                       alt="send image"
                       src={assets.send_icon}
                       className="w-5"
                     />
-                  </a>
                 </div>
               </div>
             </motion.div>
+         </a>
           );
         })}
       </motion.div>

@@ -2,6 +2,7 @@ import { assets, workData } from "@/assets/assets";
 import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const Work = ({ isDarkMode }) => {
   return (
@@ -47,7 +48,7 @@ const Work = ({ isDarkMode }) => {
         
         {workData.map((projects, index) => {
           return (
-            <a href={projects.link} target="blank">
+            <Link href={projects.link} target="blank">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
@@ -74,7 +75,7 @@ const Work = ({ isDarkMode }) => {
                 </div>
               </div>
             </motion.div>
-         </a>
+         </Link>
           );
         })}
       </motion.div>

@@ -48,7 +48,7 @@ const Work = ({ isDarkMode }) => {
         
         {workData.map((projects, index) => {
           return (
-            <Link href={projects.link} target="blank">
+            <Link href={projects.link} target="_self">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
